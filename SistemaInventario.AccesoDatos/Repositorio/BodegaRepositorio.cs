@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace SistemaInventario.AccesoDatos.Repositorio
 {
-    public class BodegaRepository : Repositorio<Bodega>, IBodegaRepository
+    public class BodegaRepositorio : Repositorio<Bodega>, IBodegaRepository
     {
         private readonly ApplicationDbContext _db;
 
-        public BodegaRepository(ApplicationDbContext db) : base(db)
+        public BodegaRepositorio(ApplicationDbContext db) : base(db)
         {
             _db = db;
         }
