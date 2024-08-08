@@ -58,9 +58,8 @@ function loadDataTable() {
 }
 
 function Delete(url) {
-    console.log('sss');
     swal({
-        title: "Estas seguro de Eliminar la Bodega?",
+        title: "Estas seguro de Eliminar la categoria?",
         text: "Este registro no se podrá recuperar",
         icon: "warning",
         buttons: true,

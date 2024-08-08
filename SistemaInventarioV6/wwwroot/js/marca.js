@@ -7,7 +7,7 @@ $(document).ready(function () {
 function loadDataTable() {
     dataTable = $('#tblDatos').DataTable({
         "ajax": {
-            "url": "/Admin/Bodega/ObtenerTodos"
+            "url": "/Admin/Marca/ObtenerTodos"
         },
         "language": {
             "lengthMenu": "Mostrar _MENU_ Registros Por Pagina",
@@ -42,10 +42,10 @@ function loadDataTable() {
                 "render": function (data) {
                     return `
                         <div class="text-center">
-                            <a href="/Admin/Bodega/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
+                            <a href="/Admin/Marca/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
                                 <i class="bi bi-pencil-square"></i>
                             </a>
-                            <a onclick=Delete("/Admin/Bodega/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
+                            <a onclick=Delete("/Admin/Marca/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
                                 <i class="bi bi-trash3-fill"></i>
                             </a>
                         </div>
@@ -59,7 +59,7 @@ function loadDataTable() {
 
 function Delete(url) {
     swal({
-        title: "Estas seguro de Eliminar la Bodega?",
+        title: "Estas seguro de Eliminar la marca?",
         text: "Este registro no se podrá recuperar",
         icon: "warning",
         buttons: true,
